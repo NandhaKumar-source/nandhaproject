@@ -1,0 +1,98 @@
+.hospitals-container {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    max-width: 1200px;
+    margin: auto;
+    color: #fff;
+  }
+  
+  .hospitals-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .hospital-item {
+    background: rgba(255, 255, 255, 0.2); /* Slightly darker glass effect */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+  
+  .hospital-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  .hospital-item h2 {
+    text-align: center;
+    grid-column: span 2; /* Center the name across both columns */
+    margin-top: 0;
+    color: #f4f4f4;
+  }
+  
+  .hospital-item .description {
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .hospital-item .picture {
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hospital-item .picture img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  .hospital-item .details {
+    grid-column: span 2;
+    padding: 10px;
+  }
+  
+  .hospital-item .details p {
+    margin: 5px 0;
+  }
+  
+  .hospital-item .details .contact,
+  .hospital-item .details .location,
+  .hospital-item .details .years-running {
+    display: inline-block;
+    width: calc(33.333% - 10px);
+    margin-right: 10px;
+  }
+  
+  .navigate-button {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 20px auto;
+    background: #007bff; /* Blue background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navigate-button:hover {
+    background: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
